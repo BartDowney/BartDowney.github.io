@@ -249,10 +249,7 @@ h6 {
   cursor: pointer;
   border-radius: 50px;
   padding: 5px;
-}
-
-.mobile-nav-toggle i {
-  color: #45505b;
+  color: rgb(205, 211, 216);
 }
 
 .mobile-nav-active {
@@ -275,7 +272,7 @@ h6 {
 #landing {
   width: 100%;
   height: 100vh;
-  background: url("../Images/landingbackground.jpg") top right no-repeat;
+  background: url("../Images/landingbackground-desktop.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -286,9 +283,18 @@ h6 {
   }
 }
 
+@media (max-width: 992px){
+  #landing {
+    background: url("../Images/landingbackground-mobile.jpg") top center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+}
+
 #landing:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(79, 79, 79, 0.632);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -301,18 +307,18 @@ h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: rgb(205, 211, 216);
 }
 
 #landing p {
-  color: #45505b;
+  color: rgb(205, 211, 216);
   margin: 15px 0 0 0;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #landing p span {
-  color: #0563bb;
+  color: #2cc9ce;
   letter-spacing: 1px;
 }
 
@@ -323,7 +329,7 @@ h6 {
 #landing .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #2cc9ce;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -362,6 +368,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 30px;
+  padding-top: 0px;
 }
 
 .section-title h2 {
@@ -407,6 +414,12 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
+  color: #728394;
+}
+
+.about .content h4 {
+  font-weight: 700;
+  font-size: 20px;
   color: #728394;
 }
 
