@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+   Viper Kai Dojo Prototype Website
+     
+   Instructor Version of Student Management Page
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: instructorstudentmanagement.html
+
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Student Management</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/Logo.png">
+	<link rel="stylesheet" href="../CSS/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../JS/site.js"></script>
+
+
+</head>
+
+<body id="studentmanagement">
+		<div id="aerial">
+			<img src="../Assets/Images/Viper Kai Dojo Aerial.jpg">
+		</div>
+
+		<div id="title">
+			<img id="logo" src="../Assets/Images/Logo.png">
+			<h1>VIPER KAI DOJO</h1>
+			<h2>Student Management</h2>
+		</div>
+
+		<div id="navbar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="upcomingevents.html">Upcoming Events</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="classschedules.html">Class Schedules</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a id="login">Log Out</a></li>
+		</div>
+
+		<div id="popup">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log Out&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>You are now logged out</P>
+					<P>Click "Confirm" to return to the Home page</P>
+					<button id="logout">Confirm</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupone">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;Add a Student&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<div id="addstudentform">
+						<div>
+							<label for="sname">Name of Student</label>
+							<input name="studentName" id="sName" type="text" />
+						</div>
+	
+						<div>
+							<label for="age">Age</label>
+							<input name="studentAge" id="age" type="text" />
+						</div>
+	
+						<div>
+							<label for="pName">Name of Parent</label>
+							<input name="parentName" id="pName" type="text" />
+						</div>
+	
+						<div>
+							<label for="sphone">Student Phone Number (if any)</label>
+							<input name="studentPhone" id="sphone" type="tel" />
+						</div>
+	
+						<div>
+							<label for="pphone">Parent Phone Number</label>
+							<input name="parentPhone" id="pphone" type="tel" />
+						</div>
+	
+						<div>
+							<label for="maddress">Physical Address</label>
+							<input name="mailingAddress" id="maddress" type="text" />
+						</div>
+	
+						<div>
+							<label for="address">Mailing Address (if different)</label>
+							<input name="studentAddress" id="address" type="text" />
+						</div>
+	
+						<div>
+							<label for="mail">E-mail</label>
+							<input name="friendEmail" id="mail" type="email" />
+						</div>
+	
+						<br />
+	
+						<div>
+							<label for="level">Membership Level Assigned:
+							</label><br />
+							<select name="trainingLevel" id="level">
+								<option value="basic">Basic</option>
+								<option value="intermediate">Intermediate</option>
+								<option value="advanced">Advanced</option>
+								<option value="expert">Expert</option>
+							</select>
+							<br />
+							<br />
+						</div>
+					</div>
+	
+					<div id="addstudentbutton">
+						<button id="addstudentconfirm">Add Student</button>
+					</div>
+				</div>
+	
+				<br />
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+	
+			</div>
+		</div>
+	
+		<div id="popuptwo">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;Confirm&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<P>Your student has been added</P>
+					<p>Click "Confirm" to continue</p>
+					<button id="addstudentconfirmagain">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration only<br />"Add Student" functionality will not be present</p>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+	<div id="picone">
+		<img src="../Assets/Images/Danny.jpg">
+	</div>
+
+	<div id="profile">
+		<h3>Danny's Profile</h3>
+		<p>Name: Danny &#8226; Nickname: None</p>
+		<p>Age: 50 &#8226; Current Level: Shindoin</p>
+		<p>Favorite Quote: "When the fight comes to you, you have to be ready to fight back."</p>
+	</div>
+
+	<div id="studentlist">
+
+		<h3>Student List</h3>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Age</th>
+					<th>Level</th>
+					<th>Belt</th>
+					<th>Fees</th>
+					<th>Waiver</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td id="eli"><button onclick="location.href = 'instructorcurrentstudenteli.html'">X</button>&nbsp;Eli</td>
+					<td>17</td>
+					<td>Basic</td>
+					<td>Orange</td>
+					<td style="color:red">$27</td>
+					<td>Yes</td>
+				</tr>
+				<tr>
+					<td id="cynthia"><button onclick="location.href = 'instructorcurrentstudentcynthia.html'">X</button>&nbsp;Cynthia</td>
+					<td>7</td>
+					<td>Basic</td>
+					<td>White</td>
+					<td style="color:yellow">$27</td>
+					<td>Yes</td>
+				</tr>
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td colspan="6">Click the button next to a student to go to that student's page</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<div id="studentlistnote">
+		<h3 style="color:black; font-size:1.7vw;">Note:</h3>
+		<p>Fees appearing in <span style="color:yellow;">YELLOW</span> denote payment due within 2 weeks</p>
+		<P>Fees appearing in <span style="color:red;">RED</span> denote payment is past due</P>
+		</div>
+
+	</div>
+
+	<div id="addstudent">
+
+		<div id="addstudentbutton">
+			<button id="addstudent">Add Student</button>
+		</div>
+
+	</div>
+
+	<div id="backtodashboard">
+		<button onclick="location.href = 'instructordashboard.html'">Back to Dashboard</button>
+	</div>
+	
+	
+
+	<footer>
+		<img id="logof1" src="../Assets/Images/Logo.png">
+		<div id="footertext">
+			<p>&copy;2021 Viper Kai Dojo &#8226; 1234 Broadway, Reseda, CA 90010</p>
+			<p>(747)55V-IPER</p>
+		</div>
+		<img id="logof2" src="../Assets/Images/Logo.png">
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

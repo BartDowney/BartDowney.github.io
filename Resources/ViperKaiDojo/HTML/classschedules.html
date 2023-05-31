@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+   Viper Kai Dojo Prototype Website
+     
+   Class Schedules Page
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: classschedules.html
+
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Class Schedules</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/Logo.png">
+	<link rel="stylesheet" href="../CSS/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../JS/site.js"></script>
+
+
+</head>
+
+<body id="classschedules">
+		<div id="aerial">
+			<img src="../Assets/Images/Viper Kai Dojo Aerial.jpg">
+		</div>
+
+		<div id="title">
+			<img id="logo" src="../Assets/Images/Logo.png">
+			<h1>VIPER KAI DOJO</h1>
+			<h2>Class Schedules</h2>
+		</div>
+
+		<div id="navbar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="upcomingevents.html">Upcoming Events</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="classschedules.html">Class Schedules</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a id="login">Log In</a></li>
+			</ul>
+		</div>
+
+		<div id="popup">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log In&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<label for="username">Username</label>
+					<input id="username" type="text"/>
+					<br />
+					<br />
+					<label for="password">&nbsp;Password</label>
+					<input id="password" type="text"/>
+					<br />
+					<br />
+					<button id="loginsubmit">Submit</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupone">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Description&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<h4>Basic Karate</h4>
+					<p>Instructor : Danny</p>
+					<p>This class is for beginners, teaching you the skills required to advance through the White, Yellow, and Orange belts.</p>
+					<br />
+					<br />
+					<button id="classcloseone">Close</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popuptwo">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Description&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<h4>Intermediate Skills</h4>
+					<p>Instructor : John</p>
+					<p>This class takes your training up a notch, teaching you the skills required to advance through the Green, Blue, and Purple belts.</p>
+					<br />
+					<br />
+					<button id="classclosetwo">Close</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupthree">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Description&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<h4>Advanced Disciplines</h4>
+					<p>Instructor : John</p>
+					<p>This class is for the most dedicated only, teaching you the skills required to advance through the Red and Brown belts.</p>
+					<br />
+					<br />
+					<button id="classclosethree">Close</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+	<div id="picone">
+		<img src="../Assets/Images/Tournament.jpg">
+	</div>
+
+	<div id="motto">
+		<h2>We Are</h2>
+		<h1>VIPER KAI!</h1>
+	</div>
+
+	<div id="pictwo">
+		<img src="../Assets/Images/High Kick.jpg">
+	</div>
+
+	<div id="classtextone">
+		<p>Below you can see the current regular classes on the Viper Kai Dojo schedule.</p>
+		<p>Students are expected to report for class fifteen minutes before classtime, and classes can generally be expected to end on time.</p>
+	</div>
+
+	<div id="classcalendar">
+		
+		<table>
+		<thead>
+			<tr>
+				<th>Sunday</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr id="firstclassrow">
+				<td></td>
+				<td id="advancedclass"><a>5 PM<br/>Advanced Disciplines</a></td>
+				<td id="basicclassone"><a>6:30 PM<br/>Basic Karate</a></td>
+				<td id="intermediateclassone"><a>6 PM<br/>Intermediate Skills</a></td>
+				<td id="basicclasstwo"><a>6:30 PM<br/>Basic Karate</a></td>
+				<td id="intermediateclasstwo"><a>7 PM<br/>Intermediate Skills</a></td>
+				<td></td>
+			</tr>
+		</tbody>
+
+		<tfoot>
+			<tr>
+				<td colspan="7">Click on a class to read its description</td>
+			</tr>
+		</tfoot>
+	</table>
+
+	</div>
+
+	<div id="classtexttwo">
+		<p>Instructors will from time to time add or delete classes from the schedule, as the training needs of Viper Kai students grow and evolve.</p>
+		<p>Specialized, limited-scope classes will also be added occasionally to the schedule, but these will only be available to select students, for specific purposes.</p>
+		<p>If you do not see a class that works within your schedule, please talk to an instructor to discuss your options.</p>
+	</div>
+
+	
+
+	<footer>
+		<img id="logof1" src="../Assets/Images/Logo.png">
+		<div id="footertext">
+			<p>&copy;2021 Viper Kai Dojo &#8226; 1234 Broadway, Reseda, CA 90010</p>
+			<p>(747)55V-IPER</p>
+		</div>
+		<img id="logof2" src="../Assets/Images/Logo.png">
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

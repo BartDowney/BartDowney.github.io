@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+   Viper Kai Dojo Prototype Website
+     
+   Student Dashboard Page
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: studentdashboard.html
+
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Student Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/Logo.png">
+	<link rel="stylesheet" href="../CSS/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../JS/site.js"></script>
+
+
+</head>
+
+<body id="studentdashboard">
+	<div id="aerial">
+		<img src="../Assets/Images/Viper Kai Dojo Aerial.jpg">
+	</div>
+
+	<div id="title">
+		<img id="logo" src="../Assets/Images/Logo.png">
+		<h1>VIPER KAI DOJO</h1>
+		<h2>Student Dashboard</h2>
+	</div>
+
+	<div id="navbar">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="upcomingevents.html">Upcoming Events</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="classschedules.html">Class Schedules</a></li>
+			<li><a href="registration.html">Registration</a></li>
+			<li><a id="login">Log Out</a></li>
+	</div>
+
+	<div id="popup">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log Out&lt;</p>
+				</div>
+			</div>
+				<div id="popupcontent">
+					<P>You are now logged out</P>
+					<P>Click "Confirm" to return to the Home page</P>
+					<button id="logout">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="picone">
+		<img src="../Assets/Images/CK-Hawk.jpg">
+	</div>
+
+	<div id="profile">
+		<h3>Eli's Dashboard</h3>
+		<p>Name: Eli &#8226; Nickname: Hawk</p>
+		<p>Age: 17 &#8226; Current Level: Orange Belt</p>
+		<p>Favorite Quote: "It's a way of life, bro!"</p>
+	</div>
+
+	<div id="welcome">
+		<p>Welcome Back, Eli!</p>
+		<p>This is your Dashboard. You can see information regarding classes, financial status with the Dojo, and your
+			progress.</p>
+		<p>Use the buttons below to navigate to your My Classes page and your My Progress page.</p>
+	</div>
+
+	<div id="info">
+
+		<div id="classes">
+			<div id="classesinfo">
+				<p>Go to "My Classes" to see what classes you are currently signed up for, explore what other training
+					options are currently available, and to sign up for a new class.</p>
+			</div>
+			<div id="classesbutton">
+				<button onclick="location.href = 'myclasses.html'">My Classes</button>
+			</div>
+		</div>
+
+		<div id="financial">
+			<p>Your Membership Fees are due on the 15th of each month.</p>
+			<p>Your current fees are $27 per month.</p>
+			<p style="color:red; background-color: purple; border-radius: 5px; text-shadow: black 2px 2px;">Your fees
+				for this month are currently past due. Please pay ASAP.</p>
+		</div>
+
+		<div id="progress">
+			<div id="progressinfo">
+				<p>Go to "My Progress" to see information about your current rank, requirements to advance, classes
+					completed, and awards won.</p>
+			</div>
+			<div id="progressbutton">
+				<button onclick="location.href = 'myprogress.html'">My Progress</button>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<img id="logof1" src="../Assets/Images/Logo.png">
+		<div id="footertext">
+			<p>&copy;2021 Viper Kai Dojo &#8226; 1234 Broadway, Reseda, CA 90010</p>
+			<p>(747)55V-IPER</p>
+		</div>
+		<img id="logof2" src="../Assets/Images/Logo.png">
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

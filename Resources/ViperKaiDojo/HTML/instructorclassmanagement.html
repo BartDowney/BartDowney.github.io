@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+   Viper Kai Dojo Prototype Website
+     
+   Instructor Version of Class Management Page
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: instructorclassmanagement.html
+
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Class Management</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/Logo.png">
+	<link rel="stylesheet" href="../CSS/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../JS/site.js"></script>
+
+
+</head>
+
+<body id="classmanagement">
+		<div id="aerial">
+			<img src="../Assets/Images/Viper Kai Dojo Aerial.jpg">
+		</div>
+
+		<div id="title">
+			<img id="logo" src="../Assets/Images/Logo.png">
+			<h1>VIPER KAI DOJO</h1>
+			<h2>Class Management</h2>
+		</div>
+
+		<div id="navbar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="upcomingevents.html">Upcoming Events</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="classschedules.html">Class Schedules</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a id="login">Log Out</a></li>
+		</div>
+
+		<div id="popup">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log Out&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>You are now logged out</P>
+					<P>Click "Confirm" to return to the Home page</P>
+					<button id="logout">Confirm</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupone">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;Add a Class&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<div id="addclassform">
+						<div>
+							<label for="cname">Name of Class:</label>
+							<input name="classname" id="sname" type="text" />
+						</div>
+	
+						<br />
+	
+						<div>
+							<label for="john">Pick an Instructor for this class:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John</label>
+							<input type="radio" id="john"><br />
+							<label for="danny">Danny</label>
+							<input type="radio" id="danny"><br />
+							</select>
+						</div>
+	
+						<br />
+	
+						<div id="classtime">
+							<label for="ctime">Time of Class:</label>
+							<input name="classtime" id="ctime" type="text" size="5" />
+						</div>
+	
+						<div id="dayofweek">
+							<label for="sun">Day(s) of Week Class is Held:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday</label>
+							<input type="radio" id="sun"><br />
+							<label for="mon">Monday</label>
+							<input type="radio" id="mon"><br />
+							<label for="tue">Tuesday</label>
+							<input type="radio" id="tue"><br />
+							<label for="wed">Wednesday</label>
+							<input type="radio" id="wed"><br />
+							<label for="thu">Thursday</label>
+							<input type="radio" id="thu"><br />
+							<label for="fri">Friday</label>
+							<input type="radio" id="fri"><br />
+							<label for="sat">Saturday</label>
+							<input type="radio" id="sat"><br />
+						</div>
+	
+						<br />
+	
+						<div id="addclassdescription">
+							Write the class description in the box:<textarea rows="2" cols="40"></textarea>
+						</div>
+	
+						<div>
+							<label for="level">Membership Level of Class:
+							</label>
+							<select name="trainingLevel" id="level">
+								<option value="basic">Basic</option>
+								<option value="intermediate">Intermediate</option>
+								<option value="advanced">Advanced</option>
+								<option value="expert">Expert</option>
+								<option value="newlevel">Create New Level</option>
+							</select>
+						</div>
+	
+						<div>
+							<label for="nlevel">Name of New Level (if applicable):</label>
+							<input name="newlevel" id="nlevel" type="text" />
+						</div>
+	
+						<div>
+							<p></p>
+							<label for="eli">Students Eligible to Join:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eli</label>
+							<input type="radio" id="eli"><br />
+							<label for="cynthia">Cynthia</label>
+							<input type="radio" id="cynthia"><br />
+							</select>
+						</div>
+					</div>
+	
+					<div id="addclassconfirmbutton">
+						<button id="addclassconfirm">Add Class</button>
+					</div>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+	
+			</div>
+		</div>
+	
+		<div id="popuptwo">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;Add a Class&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<P>Your class has been added</P>
+					<p>Click "Confirm" to continue</p>
+					<button id="addclassconfirmagain">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration only<br />"Add
+						Class" functionality will not be present</p>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="popupthree">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;Edit a Class&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<div id="editclassform">
+						<div>
+							<label for="eclass">Which class would you like to edit?</label>
+							<select name="editclass" id="eclass">
+								<option value="basicclass">Basic Karate</option>
+								<option value="intermediate">Intermediate Skills</option>
+								<option value="advanced">Advanced Disciplines</option>
+							</select>
+							<p style="font-size: 0.5vw;">To remove a class from the schedule, select it and then press the "Delete Class" button below</p>
+						</div>
+	
+						<div>
+							<label for="john">Pick a new Instructor for this
+								class:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John</label>
+							<input type="radio" id="john"><br />
+							<label for="danny">Danny</label>
+							<input type="radio" id="danny"><br />
+							</select>
+						</div>
+	
+						<br />
+	
+						<div id="classtime">
+							<label for="ctime">New Class Time:</label>
+							<input name="classtime" id="ctime" type="text" size="5" />
+						</div>
+	
+						<div id="dayofweek">
+							<label for="sun">New Day(s) of Week Class is Held:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday</label>
+							<input type="radio" id="sun"><br />
+							<label for="mon">Monday</label>
+							<input type="radio" id="mon"><br />
+							<label for="tue">Tuesday</label>
+							<input type="radio" id="tue"><br />
+							<label for="wed">Wednesday</label>
+							<input type="radio" id="wed"><br />
+							<label for="thu">Thursday</label>
+							<input type="radio" id="thu"><br />
+							<label for="fri">Friday</label>
+							<input type="radio" id="fri"><br />
+							<label for="sat">Saturday</label>
+							<input type="radio" id="sat"><br />
+						</div>
+	
+						<br />
+	
+						<div id="editclassdescription">
+							Enter a new class description in the box:<textarea rows="2" cols="40"></textarea>
+						</div>
+	
+						<div>
+							<label for="level">New Membership Level of Class:
+							</label>
+							<select name="trainingLevel" id="level">
+								<option value="basic">Basic</option>
+								<option value="intermediate">Intermediate</option>
+								<option value="advanced">Advanced</option>
+								<option value="expert">Expert</option>
+								<option value="newlevel">Create New Level</option>
+							</select>
+						</div>
+	
+						<div>
+							<label for="nlevel">Name of New Level (if applicable):</label>
+							<input name="newlevel" id="nlevel" type="text" />
+						</div>
+	
+						<div>
+							<p></p>
+							<label for="eli">Students Eligible to Join:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eli</label>
+							<input type="radio" id="eli"><br />
+							<label for="cynthia">Cynthia</label>
+							<input type="radio" id="cynthia"><br />
+							</select>
+						</div>
+					</div>
+	
+					<div id="editclassconfirmbutton">
+						<button id="editclassconfirm">Edit Class</button><button id="deleteclassconfirm">Delete Class</button>
+					</div>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+	
+			</div>
+		</div>
+	
+		<div id="popupfour">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;Edit a Class&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<P>Your class has been modified</P>
+					<p>Click "Confirm" to continue</p>
+					<button id="editclassconfirmagain">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration
+						only<br />"Edit Class" functionality will not be present</p>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="popupfoura">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;Delete a Class&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<P>Your class has been deleted</P>
+					<p>Click "Confirm" to continue</p>
+					<button id="deleteclassconfirmagain">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration
+						only<br />"Delete Class" functionality will not be present</p>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="popupfive">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;ROLL CALL&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<P>There are no students currently enrolled in this class</P>
+					<button id="nostudentsclose">Close</button>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="popupsix">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;ROLL CALL&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+	
+					<div>
+						<h4>Basic Karate</h4>
+						<p>Click next to your name below to sign in for class</p>
+						<div id="rollcalllist">
+							<div>
+								<label for="john">Instructors:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;John</label>
+								<input type="radio" id="john"><br />
+								<label for="danny">Danny</label>
+								<input type="radio" id="danny"><br />
+								</select>
+							</div>
+	
+							<br />
+	
+							<div>
+								<label for="eli">Students:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Eli</label>
+								<input type="radio" id="eli"><br />
+								<label for="cynthia">Cynthia</label>
+								<input type="radio" id="cynthia"><br />
+								</select>
+							</div>
+							<br />
+						</div>
+	
+						<button id="rollcallconfirm">Confirm</button>
+					</div>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+	
+		<div id="popupseven" style="z-index: 9999;">
+			<div class="popupwindow">
+				<div id="popuptitle">
+					<img id="popuplogo" src="../Assets/Images/Logo.png">
+					<div id="popuptitlecontent">
+						<p id="popuptitle1">Viper Kai Dojo</p>
+						<p id="popuptitle2">&gt;Credentials&lt;</p>
+					</div>
+				</div>
+				<div id="popupcontent">
+					<label for="username">Username</label>
+					<input id="username" type="text" />
+					<br />
+					<br />
+					<label for="password">&nbsp;Password</label>
+					<input id="password" type="text" />
+					<br />
+	
+					<button id="credentialconfirm">Submit</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration
+						only<br />"ROLL CALL" functionality will not be present</p>
+				</div>
+	
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+	<div id="picone">
+		<img src="../Assets/Images/Danny.jpg">
+	</div>
+
+	<div id="profile">
+		<h3>Danny's Profile</h3>
+		<p>Name: Danny &#8226; Nickname: None</p>
+		<p>Age: 50 &#8226; Current Level: Shindoin</p>
+		<p>Favorite Quote: "When the fight comes to you, you have to be ready to fight back."</p>
+	</div>
+
+	<div id="managetextone">
+		<p>Below is the current class schedule for the week of:</p>
+		<p>05/16/21 - 05/21/21</p>
+
+		<p>Click on any class to set up a ROLL CALL</p>
+
+	</div>
+
+	<div id="managecalendarone">
+
+		<table>
+			<thead>
+				<tr>
+					<th>Sunday</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>Saturday</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr id="firstclassrow">
+					<td></td>
+					<td class="rollcallnostudents"><a>5 PM<br />Advanced Disciplines</a></td>
+					<td class="rollcallstudents"><a>6:30 PM<br />Basic Karate</a></td>
+					<td class="rollcallnostudents"><a>6 PM<br />Intermediate Skills</a></td>
+					<td class="rollcallstudents"><a>6:30 PM<br />Basic Karate</a></td>
+					<td class="rollcallnostudents"><a>7 PM<br />Intermediate Skills</a></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+	</div>
+
+	<div id="managecalendartwo">
+
+		<table>
+			<thead>
+				<tr>
+					<th>Sunday</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>Saturday</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr id="firstclassrow">
+					<td></td>
+					<td>5 PM<br />Advanced Disciplines</td>
+					<td>6:30 PM<br />Basic Karate</td>
+					<td>6 PM<br />Intermediate Skills</td>
+					<td>6:30 PM<br />Basic Karate</td>
+					<td>7 PM<br />Intermediate Skills</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+	<div id="managetexttwo">
+		<p>Above is the complete list of classes currently available at Viper Kai</p>
+		<p>To modify a class or add a new one, please use the buttons below</p>
+		<p>To get Attendance information, use the "Check Attendance" button</p>
+
+	</div>
+
+	<div id="addclassbutton">
+		<button id="addclass">Add New Class</button>
+	</div>
+
+	<div id="editclassbutton">
+		<button id="editclass">Edit or Delete Class</button>
+	</div>
+
+	<div id="checkattendancebutton">
+		<button onclick="location.href = 'instructorattendance.html'">Check Attendance</button>
+	</div>
+
+	<div id="backtodashboard">
+		<button onclick="location.href = 'instructordashboard.html'">Back to Dashboard</button>
+	</div>
+	
+	
+
+	<footer>
+		<img id="logof1" src="../Assets/Images/Logo.png">
+		<div id="footertext">
+			<p>&copy;2021 Viper Kai Dojo &#8226; 1234 Broadway, Reseda, CA 90010</p>
+			<p>(747)55V-IPER</p>
+		</div>
+		<img id="logof2" src="../Assets/Images/Logo.png">
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+   Viper Kai Dojo Prototype Website
+     
+   Owner Dashboard Page
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: ownerdashboard.html
+
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Owner Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/Logo.png">
+	<link rel="stylesheet" href="../CSS/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../JS/site.js"></script>
+
+
+</head>
+
+<body id="ownerdashboard">
+		<div id="aerial">
+			<img src="../Assets/Images/Viper Kai Dojo Aerial.jpg">
+		</div>
+
+		<div id="title">
+			<img id="logo" src="../Assets/Images/Logo.png">
+			<h1>VIPER KAI DOJO</h1>
+			<h2>Owner Dashboard</h2>
+		</div>
+
+		<div id="navbar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="upcomingevents.html">Upcoming Events</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="classschedules.html">Class Schedules</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a id="login">Log Out</a></li>
+		</div>
+
+		<div id="popup">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log Out&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>You are now logged out</P>
+					<P>Click "Confirm" to return to the Home page</P>
+					<button id="logout">Confirm</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupone">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log Out&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>This button will take you to an outside software package for Business Management</P>
+					<button id="businessclose">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration
+						only<br />"Business Management" functionality will not be present</p>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+	<div id="picone">
+		<img src="../Assets/Images/JohnPic.jpg">
+	</div>
+
+	<div id="profile">
+		<h3>John's Dashboard</h3>
+		<p>Name: John &#8226; Nickname: None</p>
+		<p>Age: 65 &#8226; Current Level: Sensei</p>
+		<p>Favorite Quote: "Viper Kai never dies!"</p>
+	</div>
+	
+	<div id="welcome">
+		<p>Welcome Back, John!</p>
+		<p>This is your Dashboard. Using the buttons below, you can manage classes, manage students, and navigate to the software used to handle expenses, payroll, and other business matters.</p>
+	</div>
+
+	<div id="ownerbuttons">
+		<div id="ownerbuttonone">
+			<button onclick="location.href = 'ownerclassmanagement.html'">Class Management</button>
+		</div>
+		<div id="ownerbuttontwo">
+			<button onclick="location.href = 'ownerstudentmanagement.html'">Student Management</button>
+		</div>
+		<div id="ownerbuttonthree">
+			<button id="business">Business Management</button>
+		</div>
+	</div>
+
+	<footer>
+		<img id="logof1" src="../Assets/Images/Logo.png">
+		<div id="footertext">
+			<p>&copy;2021 Viper Kai Dojo &#8226; 1234 Broadway, Reseda, CA 90010</p>
+			<p>(747)55V-IPER</p>
+		</div>
+		<img id="logof2" src="../Assets/Images/Logo.png">
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

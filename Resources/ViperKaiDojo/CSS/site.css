@@ -1,0 +1,2612 @@
+@charset "utf-8";
+@font-face {
+	font-family: "Gang of Three";
+	src: url("../Assets/Fonts/go3v2.ttf");
+}
+
+/*
+   Viper Kai Dojo Prototype Website
+     
+   Site Style Sheet
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: site.css
+
+*/
+
+/* CSS Grids */
+
+#home {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'picthree picthree intro intro'
+	'picfour supp supp picfive'
+	'footer footer footer footer';	
+}
+
+#upcomingevents {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'picthree picthree textone textone'
+	'calendar calendar calendar calendar'
+	'footer footer footer footer';	
+}
+
+#aboutus {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'textone textone video video'
+	'texttwo texttwo texttwo texttwo'
+	'picthree picfour picfour picfive'
+	'buttons buttons buttons buttons'
+	'footer footer footer footer';	
+}
+
+#classschedules {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'. textone textone .'
+	'calendar calendar calendar calendar'
+	'. texttwo texttwo .'
+	'footer footer footer footer';	
+}
+
+#registration {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'. rform rform .'
+	'footer footer footer footer';	
+}
+
+#viperkaistaff {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'staffone staffone staffone staffone'
+	'stafftwo stafftwo stafftwo stafftwo'
+	'footer footer footer footer';	
+}
+
+#viperkaistudents {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'picthree textone textone picfour'
+	'studentone studentone studenttwo studenttwo'
+	'footer footer footer footer';	
+}
+
+#viperkaidiscipline {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'picthree history history history'
+	'discipline discipline discipline picfour'
+	'levels levels levels levels'
+	'buttons buttons buttons buttons'
+	'footer footer footer footer';	
+}
+
+#beltrequirements {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone motto motto pictwo'
+	'textone textone textone textone'
+	'whitepic whitetext whitetext whitetext'
+	'yellowpic yellowtext yellowtext yellowtext'
+	'orangepic orangetext orangetext orangetext'
+	'greenpic greentext greentext greentext'
+	'bluepic bluetext bluetext bluetext'
+	'purplepic purpletext purpletext purpletext'
+	'brownpic browntext browntext browntext'
+	'redpic redtext redtext redtext'
+	'blackpic blacktext blacktext blacktext'
+	'footer footer footer footer';	
+}
+
+#ownerdashboard {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	'. welcome welcome .'
+	'buttons buttons buttons buttons'
+	'footer footer footer footer';	
+}
+
+#instructordashboard {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	'. welcome welcome .'
+	'buttons buttons buttons buttons'
+	'footer footer footer footer';	
+}
+
+#studentdashboard {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	'. welcome welcome .'
+	'info info info info'
+	'footer footer footer footer';	
+}
+
+#studentmanagement {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	'studentlist studentlist studentlist studentlist'
+	'addstudent addstudent backtodashboard backtodashboard'
+	'footer footer footer footer';	
+}
+
+#currentstudent {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	' . . . . '
+	' . . . . '
+	' . . . . '
+	'studentpic studentinfo studentinfo studentinfo'
+	'sidebuttons studentinfo studentinfo studentinfo'
+	'footer footer footer footer';	
+}
+
+#myprogress {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	'basicinfo basicinfo basicinfo basicinfo'
+	'comments comments comments comments'
+	'backtodashboard backtodashboard backtodashboard backtodashboard'
+	'footer footer footer footer';	
+}
+
+#attendance {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	'textone textone textone textone'
+	'calendar calendar calendar calendar'
+	'backtomanagement backtomanagement backtomanagement backtomanagement'
+	'footer footer footer footer';	
+}
+
+#myclasses {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	'textone textone textone textone'
+	'calendarone calendarone calendarone calendarone'
+	'calendartwo calendartwo calendartwo calendartwo'
+	'texttwo texttwo texttwo texttwo'
+	'buttons buttons buttons buttons'
+	'footer footer footer footer';	
+}
+
+#classmanagement {
+	background-color: blueviolet;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'hone htwo htwo htwo'
+	'nv nv nv nv'
+	'picone profile profile profile'
+	'textone textone textone textone'
+	'calendarone calendarone calendarone calendarone'
+	'calendartwo calendartwo calendartwo calendartwo'
+	'texttwo texttwo texttwo texttwo'
+	'addclass editclass checkattendance backtodashboard'
+	'footer footer footer footer';	
+}
+
+
+/* Popup Window Styles */
+
+#popup {    
+    display: none;
+    position: fixed;
+    top:20%;
+    right:0;
+    width:100%;
+    z-index:99;
+}
+
+#popupone, #popuptwo, #popupthree, #popupfour,  #popupfoura, #popupfive, #popupsix, #popupseven { 
+    display: none;
+    position: fixed;
+    bottom:20%;
+    left:0;
+    width:100%;
+    z-index:99;
+}
+
+#classmanagement #popupone, #classmanagement #popupthree {
+	display: none;
+    position: fixed;
+    bottom:10%;
+    left:0;
+    width:100%;
+    z-index:99;
+}
+
+.popupwindow {
+	background-color:hsl(293, 79%, 54%);
+    margin:auto;
+    padding:10px;
+	border:rgb(78, 7, 78) ridge 10px;
+	border-radius: 20px;
+	box-shadow: black 3px 3px 5px;
+    z-index: 9;
+    width:750px;
+	max-height:1075px;
+	place-self: center;
+    display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'title title title'
+	'content content content'
+	'footer footer footer'
+}
+
+#popuptitle {
+	grid-area: title;
+	background-color: rgb(44, 124, 170);
+	text-align: center;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	display:grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'logo titleone titleone'
+
+}
+
+#popuplogo {
+	grid-area:logo;
+	width:70%;
+	padding:5px;
+	place-self: center;
+}
+
+#popuptitlecontent {
+	grid-area: titleone;
+	place-self: center;
+	line-height: 1vw;
+}
+
+#popuptitle1 {
+	font-family: "Gang of Three";
+	font-size: 2vw;
+	line-height: 1vw;
+}
+
+#popuptitle2 {
+	font-size: 1.5vw;
+	font-weight: bold;
+	line-height: 1vw;
+}
+
+#popupcontent {
+	grid-area: content;
+	width:75%;
+	max-height:100%;
+	text-align: center;
+	margin:auto;
+	font-size:1.5vw;
+}
+
+#popupcontent button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;	
+	margin:10px;
+}
+
+#studentmanagement #popupone #popupcontent {
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'contentone'
+	'contenttwo';
+}
+
+#addstudentform {
+	grid-area: contentone;
+	font-size:1vw;
+	line-height: 1.2vw;
+	text-align: right;
+	place-self: stretch;
+}
+
+#popupcontent input {
+	font-size:1vw;
+}
+
+#addstudentform input {
+	font-size:0.7vw;
+	place-self: center;
+}
+
+#addstudentbutton {
+	grid-area: contenttwo;
+	place-self: center;
+}
+
+#currentstudent #popupfive #popupcontent {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'currentfees currentfees currentfees'
+	'paymenthistory addpayment addpayment'
+	'disclaimer disclaimer disclaimer';
+}
+
+#currentfees {
+	grid-area: currentfees;
+	place-self: center;
+	background-color: burlywood;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	text-align: center;
+	font-size: 1vw;
+	padding:10px;
+}
+
+#paymenthistory {
+	grid-area: paymenthistory;
+	max-height:200px;
+	overflow: auto;
+	background-color: white;
+	text-align: center;
+	font-size: 0.7vw;
+	border-radius: 5px;
+	padding:5px;
+	margin:auto;
+}
+
+.edit {
+	font-size: 0.6vw;
+	text-decoration: underline;
+}
+
+#addpayment {
+	grid-area: addpayment;
+	background-color: burlywood;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	font-size: .9vw;
+	text-align: left;
+	place-self: stretch;
+	display: grid;
+	grid-template-columns: .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'addpaymenttitle addpaymenttitle'
+	'addpaymentfunctionsone addpaymentfunctionstwo'
+	'addpaymentsubmit addpaymentsubmit';
+}
+
+#addpaymenttitle {
+	grid-area: addpaymenttitle;
+}
+
+#addpaymenttitle p {
+	margin:10px;
+	background-color: rgb(110, 166, 199);
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	text-align: center;
+	padding:2px;
+	font-size: .9vw;
+}
+
+#addpayment input {
+	font-size: 0.5vw;
+}
+
+#addpaymentfunctionsone {
+	grid-area: addpaymentfunctionsone;
+	text-align: center;
+}
+
+#addpaymentfunctionstwo {
+	grid-area: addpaymentfunctionstwo;
+}
+
+#addpaymentsubmit {
+	grid-area: addpaymentsubmit;
+	place-self: center;
+}
+
+#disclaimer {
+	grid-area: disclaimer;
+}
+
+#addpaymentsubmit button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1vw;
+	text-align: center;	
+	margin:10px;
+}
+
+#popupfooter {
+	grid-area: footer;
+	background-color: burlywood;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	text-align: center;
+	place-self: stretch;
+	font-size: .8vw;
+}
+
+
+
+/* Navigation Bar Styles */
+
+#navbar {
+	grid-area: nv;
+	display: table;
+	width: 100%;
+}
+
+#navbar ul {
+	display: table-row;
+	margin: 0;
+}
+
+#navbar ul li {
+	display: table-cell;
+	text-align: center;
+	width:15%;
+	border:rgb(78, 7, 78) solid 2px;
+	border-collapse: collapse;
+	border-radius: 5px;
+	background-color: rgb(110, 166, 199);
+	font-family: "Gang of Three";
+	font-size: 1.6vw;
+}
+
+#navbar ul li a {
+	padding:5px 5px 0 5px;
+	border-radius:5px;
+	text-decoration: none;
+	display: block;
+}
+#navbar ul li a:visited, #navbar ul li a:link {
+	color: black;
+}
+#navbar ul li a:hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+
+/* Header Styles */
+
+#aerial {
+	grid-area:hone;
+	place-self: stretch;
+}
+
+#aerial img {
+	width: 100%;
+	height:98.5%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#logo {
+	float:left;
+	width:35%;
+	padding: 10px;
+	margin:auto;
+}
+
+#title {
+	grid-area: htwo;
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	background-color: rgb(44, 124, 170);
+	place-self: stretch;
+}
+
+#title h1 {
+	font-family: "Gang of Three";
+	font-size: 6vw;
+	text-align: center;
+}
+
+#title h2 {
+	font-size: 3vw;
+	text-align: center;
+}
+
+/* Footer Styles */
+
+footer {
+	grid-area: footer;
+	width:99.75%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	background-color: burlywood;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'fone ftwo fthree';
+}
+
+#logof1 {
+	grid-area: fone;
+	width:20%;
+	margin: auto;
+}
+
+#footertext {
+	grid-area: ftwo;
+	text-align: center;
+	font-size:1.3vw;
+}
+
+#logof2 {
+	grid-area: fthree;
+	width: 20%;
+	margin: auto;
+}
+
+
+/* Main Template First Section Styles */
+
+#picone {
+	grid-area: picone;
+}
+
+#picone img {
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#motto {
+	grid-area: motto;
+	font-family: "Gang of Three";
+	background-color: rgb(44, 124, 170);
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	place-self: stretch;
+}
+
+#motto h1 {
+	font-size: 8vw;
+	text-align: center;
+}
+
+#motto h2 {
+	font-size: 2vw;
+	text-align: center;
+}
+
+#pictwo {
+	grid-area: pictwo;
+}
+
+#pictwo img {
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+
+/* Home Page Body Styles */
+
+#homepicthree {
+	grid-area: picthree;
+}
+
+#homepicthree img {
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#homeintro {
+	grid-area: intro;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	font-size: 2.2vw;
+	text-align: center;
+}
+
+#homeintro h1 {
+	font-family: "Gang of Three";
+	font-size: 4.0vw;
+}
+
+#homepicfour {
+	grid-area: picfour;
+}
+
+#homepicfour img {
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#homesupp {
+	grid-area: supp;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 2vw;
+}
+
+#homepicfive {
+	grid-area: picfive;
+	place-self: stretch;
+}
+
+#homepicfive img {
+	width:99%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+
+/* Upcoming Events Page Body Styles */
+
+#eventspicthree {
+	grid-area: picthree;
+}
+
+#eventspicthree img {
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#eventstext {
+	grid-area: textone;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 1.8vw;
+	padding:10px;
+}
+
+#eventscalendar {
+	grid-area: calendar;
+}
+
+#eventscalendar img {
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+
+/* About Us Page Body Styles */
+
+#abouttextone {
+	grid-area: textone;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 2vw;
+	padding:10px;
+}
+
+#video {
+	grid-area: video;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	place-self: stretch;
+}
+
+#video iframe {
+	width:100%;
+	height:100%;
+}
+
+#abouttexttwo {
+	grid-area: texttwo;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 2vw;
+}
+
+#abouttexttwo h3 {
+	font-family: "Gang of Three";
+	font-size: 3vw;
+}
+
+#aboutpicthree {
+	grid-area: picthree;
+}
+
+#aboutpicthree img {
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#aboutpicfour {
+	grid-area: picfour;
+}
+
+#aboutpicfour img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+#aboutpicfive {
+	grid-area: picfive;
+}
+
+#aboutpicfive img {
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#aboutbuttons {
+	grid-area: buttons;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'buttonone buttontwo buttonthree';
+}
+
+#aboutbuttonone {
+	grid-area: buttonone;
+	place-self: center;
+}
+
+#aboutbuttontwo {
+	grid-area: buttontwo;
+	place-self: center;
+}
+
+#aboutbuttonthree {
+	grid-area: buttonthree;
+	place-self: center;
+}
+
+#aboutbuttonone button, #aboutbuttontwo button, #aboutbuttonthree button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#aboutbuttonone :hover, #aboutbuttontwo :hover, #aboutbuttonthree :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+
+/* Class Schedules Page Body Styles */
+
+#classtextone {
+	grid-area: textone;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+#classcalendar {
+	grid-area: calendar;
+}
+
+#classschedules h4 {
+	font-family: "Gang of Three";
+	font-size: 2vw;
+	text-align: center;
+
+}
+
+#classschedules #popupcontent {
+	background-color: burlywood;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-bottom:10px;
+
+}
+
+#classcalendar h3 {
+	font-family: "Gang of Three";
+	font-size: 2.5vw;
+	text-align: center;
+	margin:auto;
+	width:30%;
+	background-color: white;
+	border-radius: 5px 5px 0 0;
+}
+
+#classcalendar table {
+	background-color: rgb(44, 124, 170);
+	border: 10px ridge burlywood;
+	border-collapse: collapse;
+	display:table;
+	width:90%;
+	margin:auto;
+	color:white;
+	font-size:1vw;
+	text-align: center;
+ }
+
+ #classcalendar th {
+	 width:14%;
+	 height:60px;
+	 font-size: 1.7vw;
+ }
+ 
+ #classcalendar th, #classcalendar td {
+	border: 3px solid black;
+	padding: 8px;
+  }
+
+  #firstclassrow {
+	  background-color: white;
+	  color:black;
+  }
+  
+  #classcalendar tfoot {
+	  font-size: 1.5vw;
+  }
+
+  #basicclassone :hover, #basicclasstwo :hover, #intermediateclassone :hover, #intermediateclasstwo :hover,#advancedclass :hover {
+  color: rgb(145, 218, 240);
+  background-color: blueviolet;
+  cursor:pointer;
+}
+
+#classtexttwo {
+	grid-area: texttwo;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+
+/* Registration Page Body Styles */
+
+#registrationform {
+	grid-area: rform;
+}
+
+
+/* Registration Form Styles*/
+
+#registrationform {
+	min-width:320px;
+	background-color:hsla(293, 79%, 54%, 0.7);
+	box-shadow: black 3px 3px 5px;
+	border-radius: 20px;
+	border:rgb(78, 7, 78) ridge 10px;
+	width:75%;
+	place-self: center;
+ }
+ 
+ #registrationform h3 {
+	font-family: "Gang of Three";
+	font-size: 2.5vw;
+	text-align: center;
+	text-decoration: underline;
+ }
+
+ #regintro {
+	 background-color: burlywood;
+	 border-radius: 5px;
+	 width:90%;
+	 font-size: 1.8vw;
+	 line-height:1vw;
+	 text-align: center;
+	 margin:auto;
+	 padding:5px;
+	 border:rgb(78, 7, 78) solid 4px;
+ }
+
+.regtitles {
+	line-height: .5vw;
+}
+
+ .regtitles p:nth-child(1){
+	 text-align: center;
+	 font-size: 1.6vw;
+	 text-decoration: underline;
+ }
+
+ .regtitles p:nth-child(2) {
+	 font-size: 1vw;
+	 text-align: center;
+ }
+ 
+#rform {
+	width:95%;
+	margin:auto;
+	text-align: right;
+	padding:15px;
+ }
+
+#rform fieldset {
+	background:rgb(189, 134, 240);
+	border-radius: 20px;
+	text-align: right;
+	margin-right:5px;
+	margin-left:auto;
+	width:35%;
+ }
+ 
+ #rform label {
+	color:black;
+	font-size:1.3vw;
+	padding: 1px;
+ }
+ 
+ 
+ #rform textarea {
+	height:100px;
+	width:60%;
+	font-size:1vw;
+ }
+
+ #rform input {
+	 font-size: 1.3vw;
+	 border-radius: 5px;
+	 background-color: rgb(110, 166, 199);
+ }
+ 
+ #regbuttons {
+	text-align:center;
+	width:100%;
+ }
+
+ #level {
+	 font-size: 1vw;
+	 text-align: right;
+ }
+ 
+ #regbuttons input[type='submit'], #regbuttons input[type='reset'] {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+	margin:10px;
+}
+ 
+ #rform input:focus, #rform select:focus, #rform textarea:focus {
+	background-color: rgb(220, 255, 220);
+ 
+ }
+
+
+/* Viper Kai Staff Page Body Styles */
+
+#staffone {
+	grid-area: staffone;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'johnpic johninfo johninfo';
+}
+
+#johnpic {
+	grid-area: johnpic;
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#johninfo {
+	grid-area: johninfo;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+}
+
+#stafftwo {
+	grid-area: stafftwo;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'dannypic dannyinfo dannyinfo';
+}
+
+#dannypic {
+	grid-area: dannypic;
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#dannyinfo {
+	grid-area: dannyinfo;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+}
+
+
+/* Viper Kai Students Page Body Styles */
+
+#studentspicthree {
+	grid-area:picthree;
+}
+
+#studentspicthree img {
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#studentstextone {
+	grid-area: textone;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align:center;
+	padding:10px;
+}
+
+#studentspicfour {
+	grid-area:picfour;
+}
+
+#studentspicfour img {
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#studentone {
+	grid-area: studentone;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'elipic eliinfo eliinfo';
+}
+
+#elipic {
+	grid-area: elipic;
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	place-self: stretch;
+}
+
+#eliinfo {
+	grid-area: eliinfo;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 1.5vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+}
+
+#studenttwo {
+	grid-area: studenttwo;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'cynthiapic cynthiainfo cynthiainfo';
+}
+
+#cynthiapic {
+	grid-area: cynthiapic;
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	place-self: stretch;
+}
+
+#cynthiainfo {
+	grid-area: cynthiainfo;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 1.5vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+}
+
+
+/* Viper Kai Discipline Page Body Styles */
+
+#viperkaidiscipline h3 {
+	font-family: "Gang of Three";
+	font-size: 2vw;
+	padding:10px;
+}
+
+#discpicthree {
+	grid-area: picthree;
+}
+
+#discpicthree img {
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#history {
+	grid-area: history;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 1.5vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+}
+
+#discipline {
+	grid-area: discipline;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 1.5vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+}
+
+#discpicfour {
+	grid-area: picfour;
+}
+
+#discpicfour img {
+	width:100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#levels {
+	grid-area: levels;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 1.5vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+}
+
+#discbutton {
+	grid-area: buttons;
+	place-self: center;
+}
+
+#discbuttonone {	
+	text-align: center;
+}
+
+#discbuttonone button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-family: "Gang of Three";
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+
+/* Belt Requirements Page Body Styles */
+
+#beltrequirements h3 {
+	font-family: "Gang of Three";
+	font-size: 2.5vw;
+	padding-left:10px;
+	place-self: top;
+}
+
+#beltrequirements span {
+	font-size:2vw;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#belttextone {
+	grid-area: textone;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+	text-align: left;
+}
+
+#whitepic {
+	grid-area: whitepic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#whitepic img {
+	width:100%;
+}
+
+#whitetext {
+	grid-area: whitetext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#yellowpic {
+	grid-area: yellowpic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#yellowpic img {
+	width:100%;
+}
+
+#yellowtext {
+	grid-area: yellowtext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#orangepic {
+	grid-area: orangepic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#orangepic img {
+	width:100%;
+}
+
+#orangetext {
+	grid-area: orangetext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#greenpic {
+	grid-area: greenpic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border-left:rgb(78, 7, 78) solid 4px;
+}
+
+#greenpic img {
+	width:100%;
+}
+
+#greentext {
+	grid-area: greentext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#bluepic {
+	grid-area: bluepic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#bluepic img {
+	width:100%;
+}
+
+#bluetext {
+	grid-area: bluetext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#purplepic {
+	grid-area: purplepic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#purplepic img {
+	width:100%;
+}
+
+#purpletext {
+	grid-area: purpletext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#brownpic {
+	grid-area: brownpic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#brownpic img {
+	width:100%;
+}
+
+#browntext {
+	grid-area: browntext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#redpic {
+	grid-area: redpic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#redpic img {
+	width:100%;
+}
+
+#redtext {
+	grid-area: redtext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#blackpic {
+	grid-area: blackpic;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#blackpic img {
+	width:100%;
+}
+
+#blacktext {
+	grid-area: blacktext;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+
+/* Owner Dashboard Page Body Styles */
+
+#picone {
+	grid-area: picone;
+}
+
+#picone img {
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#profile {
+	grid-area: profile;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 1.3vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#profile h3 {
+	font-family: "Gang of Three";
+	font-size: 1.8vw;
+}
+
+#welcome {	
+	grid-area: welcome;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+}
+
+#ownerbuttons {
+	grid-area: buttons;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'buttonone buttontwo buttonthree';
+}
+
+#ownerbuttonone {
+	grid-area: buttonone;
+	place-self: center;
+}
+
+#ownerbuttontwo {
+	grid-area: buttontwo;
+	place-self: center;
+}
+
+#ownerbuttonthree {
+	grid-area: buttonthree;
+	place-self: center;
+}
+
+#ownerbuttonone button, #ownerbuttontwo button, #ownerbuttonthree button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#ownerbuttonone :hover, #ownerbuttontwo :hover, #ownerbuttonthree :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+
+/* Instructor Dashboard Page Body Styles */
+
+#picone {
+	grid-area: picone;
+}
+
+#picone img {
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#profile {
+	grid-area: profile;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 1.3vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#profile h3 {
+	font-family: "Gang of Three";
+	font-size: 1.8vw;
+}
+
+#welcome {	
+	grid-area: welcome;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+}
+
+#instructorbuttons {
+	grid-area: buttons;
+	display: grid;
+	grid-template-columns: .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'buttonone buttontwo';
+}
+
+#instructorbuttonone {
+	grid-area: buttonone;
+	place-self: center;
+}
+
+#instructorbuttontwo {
+	grid-area: buttontwo;
+	place-self: center;
+}
+
+#instructorbuttonone button, #instructorbuttontwo button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#instructorbuttonone :hover, #instructorbuttontwo :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+
+/* Student Dashboard Page Body Styles */
+
+#picone {
+	grid-area: picone;
+}
+
+#picone img {
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#profile {
+	grid-area: profile;
+	background-color: rgb(110, 166, 199);
+	place-self: stretch;
+	font-size: 1.3vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-left:10px;
+}
+
+#profile h3 {
+	font-family: "Gang of Three";
+	font-size: 1.8vw;
+}
+
+#welcome {	
+	grid-area: welcome;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+}
+
+#info {
+	grid-area: info;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'classes financial studentprogress';
+}
+
+#classes {
+	grid-area: classes;
+	display: grid;
+	grid-template-columns: .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'classesinfo'
+	'classesbutton';
+}
+
+#classesinfo {
+	grid-area: classesinfo;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	padding:10px;
+}
+
+#classesbutton {
+	grid-area: classesbutton;
+	place-self: center;
+}
+
+#financial {
+	grid-area: financial;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	padding:10px;
+}
+
+#progress {
+	grid-area: studentprogress;
+	display: grid;
+	grid-template-columns: .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'progressinfo'
+	'progressbutton';
+}
+
+#progressinfo {
+	grid-area: progressinfo;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	padding:10px;
+}
+
+#progressbutton {
+	grid-area: progressbutton;
+	place-self: center;
+}
+
+#info button, #info button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#info button :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+
+/* Student Management Page Body Styles */
+
+#studentlist {	
+	grid-area: studentlist;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+}
+
+#studentlistnote {
+	background-color: rgb(60, 179, 37);
+	color:white;
+	box-shadow: black 2px 2px 5px;
+	width:50%;
+	margin:50px auto;
+	font-size:1.5vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 5px;
+}
+
+#studentlist h3 {
+	font-family: "Gang of Three";
+	font-size: 2vw;
+}
+
+#addstudent {
+	grid-area: addstudent;
+	place-self: center;
+}
+
+#addstudent button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#addstudent :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+#backtodashboard {
+	grid-area: backtodashboard;
+	place-self: center;
+}
+
+#backtodashboard button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#backtodashboard :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+#studentmanagement table {
+	background-color: rgb(44, 124, 170);
+	border: 10px ridge purple;
+	border-collapse: collapse;
+	display:table;
+	width:90%;
+	margin:auto;
+ }
+ 
+ #studentmanagement th, #studentmanagement td {
+	border: 3px solid white;
+	line-height: 1.4em;
+	padding: 8px;
+  }
+ 
+  #studentmanagement table thead tr {
+	height:60px;
+	background-color: blueviolet;
+  }
+ 
+  #studentmanagement table tbody tr {
+	 height:50px;
+  }
+
+  #studentmanagement table button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+  }
+
+  #eli :hover, #cynthia :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+
+/* Current Student Page Body Styles */
+
+#studentpic {
+	grid-area: studentpic;
+}
+
+#studentpic img {	
+	width: 100%;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+}
+
+#sidebuttons {
+	grid-area: sidebuttons;
+	display: grid;
+	grid-template-columns: .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'studentpayment'
+	' . '
+	' . '
+	' . '
+	' . '
+	' . '
+	' . '
+	' . '
+	'addcomment'
+	' . '
+	' . '
+	' . '
+	' . '
+	' . '
+	' . '
+	' . '
+	'backtomanagement';
+}
+
+#studentpayment {
+	grid-area: studentpayment;
+}
+
+#addcomment {
+	grid-area: addcomment;
+}
+
+#backtomanagement {
+	grid-area: backtomanagement;
+}
+
+#sidebuttons button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 2.5vw;
+	text-align: center;
+}
+
+#backtomanagement button {
+	font-size: 1.6vw;
+}
+
+#studentinfo {
+	grid-area: studentinfo;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+	display: grid;
+	grid-template-columns: .7fr .7fr .7fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'studentname . . '
+	'studentinfobody studentinfobody studentinfobody'
+	' . . .'
+	' . . .'
+	' . . .'
+	' . . .'
+	' . . .'
+	'editstudent archivestudent deletestudent';
+}
+
+#studentname {
+	grid-area: studentname;
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 2.5vw;
+	text-align: center;
+}
+
+#studentinfobody {
+	grid-area: studentinfobody;
+	column-count: 2;
+	text-align:left;
+	font-size: 1.5vw;
+}
+
+#editstudent {
+	grid-area: editstudent;
+}
+
+#archivestudent {
+	grid-area: archivestudent;
+}
+
+#deletestudent {
+	grid-area: deletestudent;
+}
+
+#studentinfo button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#savechanges {
+	grid-area:editstudent;
+	display: none;
+}
+
+#editstudent :hover, #archivestudent :hover, #deletestudent :hover, #studentpayment :hover, #addcomment :hover, #backtomanagement :hover {
+  background-color: rgb(145, 218, 240);
+  cursor:pointer;
+}
+
+#currentstudent #popupsix textarea {
+	font-size: 1vw;
+	
+}
+
+
+/* My Progress Page Body Styles */
+
+#basicinfo {
+	grid-area: basicinfo;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+}
+
+#myprogress h4{
+	font-family: "Gang of Three";
+	font-size: 2.5vw;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#comments {
+	grid-area: comments;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+}
+
+#backtodashboard {
+	grid-area: backtodashboard;
+	place-self: center;
+}
+
+#backtodashboard button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#backtodashboard :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+
+/* Attendance Page Body Styles */
+
+#attendance #textone {
+	grid-area: textone;
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 2vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+}
+
+#attendancecalendar {
+	grid-area: calendar;
+}
+
+#attendancecalendar table {
+	background-color: white;
+	border: 10px ridge burlywood;
+	border-collapse: collapse;
+	display:table;
+	width:90%;
+	margin:auto;
+	color:black;
+	font-size:1.3vw;
+ }
+
+ #attendancecalendar tr {
+	 height:75px;
+ }
+
+ #attendancecalendar th {
+	 width:14%;
+	 height:60px;
+	 font-size: 1.7vw;
+	 background-color: rgb(44, 124, 170);
+	 text-align: center;
+	 color:white;
+ }
+
+ #days {
+	 background-color:rgb(145, 218, 240);
+	 color:black;
+ }
+ 
+ #attendancecalendar th, #attendancecalendar td {
+	border: 3px solid black;
+	padding: 8px;
+  }
+
+  #attendancebody td {
+	  text-align: left;
+	  color:red;
+  }
+
+  #days td {
+	 text-align:center;
+  }
+
+  .clickable {
+	  color: black;
+  }
+
+  .nonclickable {
+	  color:gray;
+  }
+
+  #attendancecalender span {
+	  color:gray;
+  }
+
+  .blank {
+	  background-color: gray;
+  }
+  
+  #attendancebody tfoot td {
+	  font-size: 1.5vw;
+	  background-color: rgb(44, 124, 170);
+	  color:white;
+	  text-align: center;
+  }
+
+  .nostudents :hover, #firstclass :hover, #secondclass :hover, #thirdclass :hover, #fourthclass :hover, #fifthclass :hover, #sixthclass :hover {
+  color: rgb(145, 218, 240);
+  background-color: blueviolet;
+  cursor:pointer;
+}
+
+
+#backtomanagement {
+	grid-area: backtomanagement;
+	place-self: center;
+}
+
+#backtomanagement button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#backtomanagement :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+#attendance #popupcontent {
+	background-color: burlywood;
+	place-self: stretch;
+	font-size: 1.5vw;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding:10px;
+	text-align: center;
+}
+
+
+/* My Classes Page Body Styles */
+
+#studentclasstextone {
+	grid-area: textone;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+#studentclasscalendarone {
+	grid-area: calendarone;
+}
+
+#studentclasscalendartwo {
+	grid-area: calendartwo;
+}
+
+#studentclasstexttwo {
+	grid-area: texttwo;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+#myclasses h4 {
+	font-family: "Gang of Three";
+	font-size: 2vw;
+	text-align: center;
+
+}
+
+#myclasses #popupcontent {
+	background-color: burlywood;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-bottom:10px;
+
+}
+
+#studentclasscalendarone table, #studentclasscalendartwo table  {
+	background-color: rgb(44, 124, 170);
+	border: 10px ridge burlywood;
+	border-collapse: collapse;
+	display:table;
+	width:90%;
+	margin:auto;
+	color:white;
+	font-size:1vw;
+	text-align: center;
+ }
+
+ #studentclasscalendarone th, #studentclasscalendartwo th{
+	 width:14%;
+	 height:60px;
+	 font-size: 1.7vw;
+ }
+ 
+  #studentclasscalendarone th, #studentclasscalendarone td, #studentclasscalendartwo th, #studentclasscalendartwo td{
+	border: 3px solid black;
+	padding: 8px;
+  }
+
+  #firstclassrow {
+	  background-color: white;
+	  color:black;
+  }
+
+  #basicclassone :hover, #basicclasstwo :hover, #intermediateclassone :hover, #intermediateclasstwo :hover,#advancedclass :hover {
+  color: rgb(145, 218, 240);
+  background-color: blueviolet;
+  cursor:pointer;
+}
+
+#studentclasstexttwo {
+	grid-area: texttwo;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+#studentclassbutton {
+	grid-area: buttons;
+	place-self: center;
+}
+
+#studentclassbutton button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+}
+
+#studentclassbutton :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+
+/* Class Management Page Body Styles */
+
+#managetextone {
+	grid-area: textone;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+#managecalendarone {
+	grid-area: calendarone;
+}
+
+#managecalendartwo {
+	grid-area: calendartwo;
+}
+
+#managetexttwo {
+	grid-area: texttwo;
+	background-color: burlywood;
+	place-self: stretch;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+#classmanagement h4 {
+	font-family: "Gang of Three";
+	font-size: 2vw;
+	text-align: center;
+
+}
+
+#classmanagement #popupcontent {
+	background-color: burlywood;
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 4px;
+	padding-bottom:10px;
+}
+
+#classmanagement #popupcontent #popupone, #classmanagement #popupcontent #popupthree {
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	grid-template-areas: 
+	'contentone'
+	'contenttwo';
+}
+
+#addclassform, #editclassform {
+	grid-area: contentone;
+	font-size:1vw;
+	line-height: 1.2vw;
+	text-align: right;
+	place-self: stretch;
+}
+
+#addclassform input, #editclassform input {
+	font-size:0.7vw;
+	place-self: center;
+}
+
+#addclassconfirmbutton, #editclassconfirmbutton {
+	grid-area: contenttwo;
+	place-self: center;
+}
+
+#managecalendarone table, #managecalendartwo table  {
+	background-color: rgb(44, 124, 170);
+	border: 10px ridge burlywood;
+	border-collapse: collapse;
+	display:table;
+	width:90%;
+	margin:auto;
+	color:white;
+	font-size:1vw;
+	text-align: center;
+ }
+
+ #managecalendarone th, #managecalendartwo th{
+	 width:14%;
+	 height:60px;
+	 font-size: 1.7vw;
+ }
+ 
+  #managecalendarone th, #managecalendarone td, #managecalendartwo th, #managecalendartwo td{
+	border: 3px solid black;
+	padding: 8px;
+  }
+
+  #firstclassrow {
+	  background-color: white;
+	  color:black;
+  }
+
+  .rollcallnostudents :hover, .rollcallstudents :hover {
+  color: rgb(145, 218, 240);
+  background-color: blueviolet;
+  cursor:pointer;
+}
+
+#addclassbutton {
+	grid-area: addclass;
+	place-self: center;
+}
+
+#editclassbutton {
+	grid-area: editclass;
+	place-self: center;
+}
+
+#checkattendancebutton {
+	grid-area: checkattendance;
+	place-self: center;
+}
+
+#backtodashboard {
+	grid-area: backtodashboard;
+	place-self: center;
+}
+
+#addclassbutton button, #editclassbutton button, #checkattendancebutton button, #backtodashboard button {
+	font-family: "Gang of Three";
+	border-radius: 5px;
+	border:rgb(78, 7, 78) solid 2px;
+	background-color: rgb(110, 166, 199);
+	font-size: 1.6vw;
+	text-align: center;
+	width:75%;
+}
+
+#addclassbutton :hover, #editclassbutton :hover, #checkattendancebutton :hover, #backtodashboard :hover {
+	background-color: rgb(145, 218, 240);
+	cursor:pointer;
+}
+
+#rollcalllist {
+	text-align: right;
+}
+
+#editclassconfirmbutton button {
+	font-size:1vw;
+}
+
+

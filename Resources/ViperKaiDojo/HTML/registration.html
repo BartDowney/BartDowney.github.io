@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+   Viper Kai Dojo Prototype Website
+     
+   Registration Page
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: registration.html
+
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Registration</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/Logo.png">
+	<link rel="stylesheet" href="../CSS/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../JS/site.js"></script>
+
+
+</head>
+
+<body id="registration">
+	<div id="aerial">
+		<img src="../Assets/Images/Viper Kai Dojo Aerial.jpg">
+	</div>
+
+	<div id="title">
+		<img id="logo" src="../Assets/Images/Logo.png">
+		<h1>VIPER KAI DOJO</h1>
+		<h2>Registration</h2>
+	</div>
+
+	<div id="navbar">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="upcomingevents.html">Upcoming Events</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="classschedules.html">Class Schedules</a></li>
+			<li><a href="registration.html">Registration</a></li>
+			<li><a id="login">Log In</a></li>
+		</ul>
+	</div>
+
+	<div id="popup">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log In&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<label for="username">Username</label>
+				<input id="username" type="text" />
+				<br />
+				<br />
+				<label for="password">&nbsp;Password</label>
+				<input id="password" type="text" />
+				<br />
+				<br />
+				<button id="loginsubmit">Submit</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupone">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Registration Confirm&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<p>Your form has been submitted</p>
+				<p>A member of our staff will contact you ASAP</p>
+				<p>Click the "Close" button to return to the Home page</p>
+				<button id="registrationconfirm">Close</button>
+				<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration
+					only<br />"Registration" functionality will not be present</p>
+			</div>
+
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="picone">
+		<img src="../Assets/Images/Tournament.jpg">
+	</div>
+
+	<div id="motto">
+		<h2>We Are</h2>
+		<h1>VIPER KAI!</h1>
+	</div>
+
+	<div id="pictwo">
+		<img src="../Assets/Images/High Kick.jpg">
+	</div>
+
+	<div id="registrationform">
+
+		<h3>Registration Form</h3>
+
+		<div id="regintro">
+			<p>To begin your journey with Viper Kai,</p>
+			<p>please fill out and submit this form.</p>
+			<p>A member of our staff will contact you.</p>
+		</div>
+
+		<br />
+		<br />
+
+		<form id="rform" action="javascript:$('#popupone').show('slow');">
+
+			<div>
+				<label for="date">Today's Date</label>
+				<input name="inquireDate" id="date" type="date" />
+			</div>
+
+			<br />
+			<br />
+
+			<div class="regtitles">
+				<p>Basic Information</p>
+				<p>* All Fields Required</p>
+			</div>
+
+			<br />
+			<br />
+
+			<div>
+				<label for="sname">Name of Student*</label>
+				<input name="studentName" id="sName" type="text" placeholder="first and last name" required />
+			</div>
+
+			<div>
+				<label for="age">Age*</label>
+				<input name="studentAge" id="age" type="text" placeholder="7-25" required />
+			</div>
+
+			<div>
+				<label for="pName">Name of Parent*</label>
+				<input name="parentName" id="pName" type="text" placeholder="first and last name" required />
+			</div>
+
+			<br />
+			<br />
+
+			<div class="regtitles">
+				<p>Contact Information</p>
+				<p>* Required Field</p>
+			</div>
+
+			<br />
+			<br />
+
+			<div>
+				<label for="sphone">Student Phone Number (if any)</label>
+				<input name="studentPhone" id="sphone" type="tel" placeholder="(nnn) nnn-nnnn"
+					pattern="\(\d{3}\)\s\d{3}-\d{4}" />
+			</div>
+
+			<div>
+				<label for="pphone">Parent Phone Number*</label>
+				<input name="parentPhone" id="pphone" type="tel" placeholder="(nnn) nnn-nnnn"
+					pattern="\(\d{3}\)\s\d{3}-\d{4}" required />
+			</div>
+
+			<div>
+				<label for="maddress">Physical Address*</label>
+				<input name="mailingAddress" id="maddress" type="text" placeholder="Street, City, State" required />
+			</div>
+
+			<div>
+				<label for="address">Mailing Address (if different)</label>
+				<input name="studentAddress" id="address" type="text" placeholder="Street, City, State" />
+			</div>
+
+			<div>
+				<label for="mail">E-mail*</label>
+				<input name="friendEmail" id="mail" type="email" placeholder="email@email.com" required />
+			</div>
+
+			<br />
+			<br />
+
+			<div class="regtitles">
+				<p>Other Information</p>
+			</div>
+
+			<br />
+			<br />
+
+			<div>
+				<label for="level">To which Membership Level do you think you belong?
+				</label><br />
+				<select name="trainingLevel" id="level">
+					<option value="basic">Basic</option>
+					<option value="intermediate">Intermediate</option>
+					<option value="advanced">Advanced</option>
+					<option value="expert">Expert</option>
+				</select>
+			</div><br />
+
+			<div>
+				<label for="purpose">Tell us why you want to join Viper Kai:</label>
+				<textarea name="joinPurpose" id="purpose"></textarea>
+			</div>
+
+			<div id="regbuttons">
+				<input id="submit" type="submit" value="Submit" />
+				<input type="reset" value="Reset" />
+			</div>
+		</form>
+	</div>
+
+	<footer>
+		<img id="logof1" src="../Assets/Images/Logo.png">
+		<div id="footertext">
+			<p>&copy;2021 Viper Kai Dojo &#8226; 1234 Broadway, Reseda, CA 90010</p>
+			<p>(747)55V-IPER</p>
+		</div>
+		<img id="logof2" src="../Assets/Images/Logo.png">
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+   Viper Kai Dojo Prototype Website
+     
+   Owner Version of Attendance Page
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: ownerattendance.html
+
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Attendance</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/Logo.png">
+	<link rel="stylesheet" href="../CSS/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../JS/site.js"></script>
+
+
+</head>
+
+<body id="attendance">
+	<div id="aerial">
+		<img src="../Assets/Images/Viper Kai Dojo Aerial.jpg">
+	</div>
+
+	<div id="title">
+		<img id="logo" src="../Assets/Images/Logo.png">
+		<h1>VIPER KAI DOJO</h1>
+		<h2>Attendance</h2>
+	</div>
+
+	<div id="navbar">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="upcomingevents.html">Upcoming Events</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="classschedules.html">Class Schedules</a></li>
+			<li><a href="registration.html">Registration</a></li>
+			<li><a id="login">Log Out</a></li>
+	</div>
+
+	<div id="popup">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log Out&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<P>You are now logged out</P>
+				<P>Click "Confirm" to return to the Home page</P>
+				<button id="logout">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupone">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Attendance&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<P>No students are currently enrolled in this class</P>
+				<button class="attendanceconfirm">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popuptwo">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Attendance&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<P>Basic Karate -- 05/04/21</P>
+				<P>Enrolled Students:</P>
+				<p>Eli &#8226; Cynthia</p>
+				<p>Attendance:</p>
+				<p>Eli : On Time</p>
+				<p>Cynthia : On Time</p>
+				<button class="attendanceconfirm">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupthree">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Attendance&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<P>Basic Karate -- 05/06/21</P>
+				<P>Enrolled Students:</P>
+				<p>Eli &#8226; Cynthia</p>
+				<p>Attendance:</p>
+				<p>Eli : On Time</p>
+				<p>Cynthia : Excused Absence</p>
+				<button class="attendanceconfirm">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupfour">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Attendance&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<P>Basic Karate -- 05/11/21</P>
+				<P>Enrolled Students:</P>
+				<p>Eli &#8226; Cynthia</p>
+				<p>Attendance:</p>
+				<p>Eli : 1 min late</p>
+				<p>Cynthia : Absent</p>
+				<button class="attendanceconfirm">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupfive">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Attendance&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<P>Basic Karate -- 05/13/21</P>
+				<P>Enrolled Students:</P>
+				<p>Eli &#8226; Cynthia</p>
+				<p>Attendance:</p>
+				<p>Eli : On Time</p>
+				<p>Cynthia : 5 min late</p>
+				<button class="attendanceconfirm">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupsix">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Attendance&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<P>Basic Karate -- 05/18/21</P>
+				<P>Enrolled Students:</P>
+				<p>Eli &#8226; Cynthia</p>
+				<p>Attendance:</p>
+				<p>Eli : Excused Absence</p>
+				<p>Cynthia : 7 min late</p>
+				<button class="attendanceconfirm">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="popupseven">
+		<div class="popupwindow">
+			<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Class Attendance&lt;</p>
+				</div>
+			</div>
+			<div id="popupcontent">
+				<P>Basic Karate -- 05/20/21</P>
+				<P>Enrolled Students:</P>
+				<p>Eli &#8226; Cynthia</p>
+				<p>Attendance:</p>
+				<p>Eli : On Time</p>
+				<p>Cynthia : On Time</p>
+				<button class="attendanceconfirm">Confirm</button>
+			</div>
+			<div id="popupfooter">
+				<p>&copy;2021 Viper Kai Dojo</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="picone">
+		<img src="../Assets/Images/JohnPic.jpg">
+	</div>
+
+	<div id="profile">
+		<h3>John's Profile</h3>
+		<p>Name: John &#8226; Nickname: None</p>
+		<p>Age: 65 &#8226; Current Level: Sensei</p>
+		<p>Favorite Quote: "Viper Kai never dies!"</p>
+	</div>
+
+	<div id="textone">
+		<p>This is the Class Schedule for the Current Month</p>
+		<p>To get Attendance Information about a class, click on the class in the calendar below</p>
+
+	</div>
+
+	<div id="attendancecalendar">
+
+		<table id="attendancebody">
+			<thead>
+				<th colspan="7">May 2021</th>
+			</thead>
+
+			<tbody>
+
+				<tr id="days">
+				<td>Sunday</td>
+				<td>Monday</td>
+				<td>Tuesday</td>
+				<td>Wednesday</td>
+				<td>Thursday</td>
+				<td>Friday</td>
+				<td>Saturday</td>
+				</tr>
+
+				<tr>
+					<td class="blank"></td>
+					<td class="blank"></td>
+					<td class="blank"></td>
+					<td class="blank"></td>
+					<td class="blank"></td>
+					<td class="blank"></td>
+					<td>1<br /><br /><br /></td>
+				</tr>
+
+				<tr>
+					<td>2<br /><br /><br /></td>
+					<td class="nostudents">3<br /><a class="clickable">5 PM<br />Advanced Disciplines</a></td>
+					<td id="firstclass">4<br /><a class="clickable">6:30 PM<br />Basic Karate</a></td>
+					<td class="nostudents">5<br /><a class="clickable">6 PM<br />Intermediate Skills</a></td>
+					<td id="secondclass">6<br /><a class="clickable">6:30 PM<br />Basic Karate</a></td>
+					<td class="nostudents">7<br /><a class="clickable">7 PM<br />Intermediate Skills</a></td>
+					<td>8<br /><br /><br /></td>
+				</tr>
+
+				<tr>
+					<td>9<br /><br /><br /></td>
+					<td class="nostudents">10<br /><a class="clickable">5 PM<br />Advanced Disciplines</a></td>
+					<td id="thirdclass">11<br /><a class="clickable">6:30 PM<br />Basic Karate</a></td>
+					<td class="nostudents">12<br /><a class="clickable">6 PM<br />Intermediate Skills</a></td>
+					<td id="fourthclass">13<br /><a class="clickable">6:30 PM<br />Basic Karate</a></td>
+					<td class="nostudents">14<br /><a class="clickable">7 PM<br />Intermediate Skills</a></td>
+					<td>15<br /><br /><br /></td>
+				</tr>
+
+				<tr>
+					<td>16<br /><br /><br /></td>
+					<td class="nostudents">17<br /><a class="clickable">5 PM<br />Advanced Disciplines</a></td>
+					<td id="fifthclass">18<br /><a class="clickable">6:30 PM<br />Basic Karate</a></td>
+					<td class="nostudents">19<br /><a class="clickable">6 PM<br />Intermediate Skills</a></td>
+					<td id="sixthclass">20<br /><a class="clickable">6:30 PM<br />Basic Karate</a></td>
+					<td>21<br /><span class="nonclickable">7 PM<br />Intermediate Skills</span></td>
+					<td>22<br /><br /><br /></td>
+				</tr>
+
+				<tr>
+					<td>23<br /><br /><br /></td>
+					<td>24<br /><span class="nonclickable">5 PM<br />Advanced Disciplines</span></td>
+					<td>25<br /><span class="nonclickable">6:30 PM<br />Basic Karate</span></td>
+					<td>26<br /><span class="nonclickable">6 PM<br />Intermediate Skills</span></td>
+					<td>27<br /><span class="nonclickable">6:30 PM<br />Basic Karate</span></td>
+					<td>28<br /><span class="nonclickable">7 PM<br />Intermediate Skills</span></td>
+					<td>29<br /><br /><br /></td>
+				</tr>
+
+				<tr>
+					<td>30<br /><br /><br /></td>
+					<td>31<br /><span class="nonclickable">5 PM<br />Advanced Disciplines</a></td>
+					<td class="blank"></td>
+					<td class="blank"></td>
+					<td class="blank"></td>
+					<td class="blank"></td>
+					<td class="blank"></td>
+				</tr>
+
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td colspan="7">When you are done, use the button below to return to the previous page</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+
+	<div id="backtomanagement">
+
+			<button onclick="location.href = 'ownerclassmanagement.html'">Back to Class Management</button>
+		</div>
+
+	</div>
+
+
+
+	<footer>
+		<img id="logof1" src="../Assets/Images/Logo.png">
+		<div id="footertext">
+			<p>&copy;2021 Viper Kai Dojo &#8226; 1234 Broadway, Reseda, CA 90010</p>
+			<p>(747)55V-IPER</p>
+		</div>
+		<img id="logof2" src="../Assets/Images/Logo.png">
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

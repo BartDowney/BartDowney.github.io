@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+   Viper Kai Dojo Prototype Website
+     
+   Instructor Version of Current Student Page for Cynthia
+
+   Author: Bart Downey
+   Date: 05/13/2021
+   
+   Filename: instructorcurrentstudent.html
+
+-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Current Student</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/Logo.png">
+	<link rel="stylesheet" href="../CSS/site.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../JS/site.js"></script>
+
+
+</head>
+
+<body id="currentstudent">
+		<div id="aerial">
+			<img src="../Assets/Images/Viper Kai Dojo Aerial.jpg">
+		</div>
+
+		<div id="title">
+			<img id="logo" src="../Assets/Images/Logo.png">
+			<h1>VIPER KAI DOJO</h1>
+			<h2>Current Student</h2>
+		</div>
+
+		<div id="navbar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="upcomingevents.html">Upcoming Events</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="classschedules.html">Class Schedules</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a id="login">Log Out</a></li>
+		</div>
+
+		<div id="popup">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Log Out&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>You are now logged out</P>
+					<P>Click "Confirm" to return to the Home page</P>
+					<button id="logout">Confirm</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupone">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Edit Student&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>Student Information is now editable</P>
+					<P>Click the "Save Changes" button when you are done editing student</P>
+					<button id="editstudentconfirm">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration only<br />"Edit Student" functionality will not be present</p>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popuptwo">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Save Changes&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>Student Information has been updated</P>
+					<button id="savechangesconfirm">Confirm</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupthree">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Archive Student&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>This student's records will be archived</P>
+					<P>Their records will be retained, but they will no longer appear in the "Current Student" list</P>
+					<button id="archivestudentconfirm">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration only<br />"Archive Student" functionality will not be present</p>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupfour">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Delete Student&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>This student will be deleted from all Viper Kai records</P>
+					<button id="deletestudentconfirm">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration only<br />"Delete Student" functionality will not be present</p>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupfive">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Student Payment&lt;</p>
+				</div>
+				</div>
+
+				<div id="popupcontent">
+
+					<div id="currentfees">
+						<p>Current Fees Due: <span style="color:red">$27</span> &#8226; Due Date: 6/21/2021</p>
+					</div>
+
+					<div id="paymenthistory">
+						<p class="edit">PAYMENT HISTORY</p>
+						<p>04/21/21 -- $27.00</p>
+						<p class="edit">edit delete</p>
+						<p>03/21/21 -- $27.00</p>
+						<p class="edit">edit delete</p>
+						<p>02/21/21 -- $27.00</p>
+						<p class="edit">edit delete</p>
+						<p>01/21/21 -- $27.00</p>
+						<p class="edit">edit delete</p>
+						<p>12/21/20 -- $27.00</p>
+						<p class="edit">edit delete</p>
+						<p>11/21/20 -- $27.00</p>
+						<p class="edit">edit delete</p>
+					</div>
+
+					<div id="addpayment">
+
+						<div id="addpaymenttitle">
+							<p>Add a Payment:</p>
+						</div>
+
+						<div id="addpaymentfunctionsone">
+							<label for="amount">Amount:</label><br />
+							<input id="amount"type="text" size="5"/><br /><br />
+							<label for="date">Today's Date:</label><br />
+							<input id="date" type="date" size="5"/>
+						</div>
+
+						<div id="addpaymentfuncitonstwo">
+							<p>Payment Type:</p>
+							<input type="radio" id="cash" name="type">
+							<label for="cash">Cash</label><br>
+							<input type="radio" id="check" name="type">
+							<label for="check">Check</label><br>
+							<input type="radio" id="credit" name="type">
+							<label for="credit">Credit</label>
+
+						</div>
+
+						<div id="addpaymentsubmit">
+							<button id="studentpaymentconfirm">Submit</button>
+						</div>
+
+					</div>
+
+					<div id="disclaimer">
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration only<br />"Add or Modify Student Payment" functionality will not be present</p>
+					</div>
+
+				</div>
+
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupsix">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Add Student Comment&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>Enter comment below and click "Add Comment"</P>
+					<textarea rows="6" cols="20"></textarea>
+					<br />
+					<br />
+					<br />
+					<button id="addcommentconfirmone">Add Comment</button>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="popupseven">
+			<div class="popupwindow">
+				<div id="popuptitle">
+				<img id="popuplogo" src="../Assets/Images/Logo.png">
+				<div id="popuptitlecontent">
+					<p id="popuptitle1">Viper Kai Dojo</p>
+					<p id="popuptitle2">&gt;Add Student Comment&lt;</p>
+				</div>
+				</div>
+				<div id="popupcontent">
+					<P>Your comment will be added to this student's "My Progress" page</P>
+					<button id="addcommentconfirmtwo">Confirm</button>
+					<p style="font-size:0.8vw;">Please Note:<br />This prototype is for demonstration only<br />"Add Student Comment" functionality will not be present</p>
+				</div>
+				<div id="popupfooter">
+					<p>&copy;2021 Viper Kai Dojo</p>
+				</div>
+			</div>
+		</div>
+
+	<div id="picone">
+		<img src="../Assets/Images/Danny.jpg">
+	</div>
+
+	<div id="profile">
+		<h3>Danny's Profile</h3>
+		<p>Name: Danny &#8226; Nickname: None</p>
+		<p>Age: 50 &#8226; Current Level: Shindoin</p>
+		<p>Favorite Quote: "When the fight comes to you, you have to be ready to fight back."</p>
+	</div>
+	
+
+	<div id="studentpic">
+		<img src="../Assets/Images/Cynthia.jpg">
+	</div>
+
+	<div id="studentinfo">
+
+		<div id="studentname">
+			<h4>Student Name : Cynthia</h4>
+		</div>
+
+		<div id="studentinfobody">
+			<p>Nickname : Princess</p>
+			<p>Age : 7</p>
+			<p>Joined Viper Kai : 11/21/2020</p>
+			<p>Current Membership Level : Basic &#8226; Status : Active</p>
+			<p>Current Belt Color : White</p>
+			<p>Date Promoted : 11/21/2020</p>
+			<p>Special Class Rank : None</p>
+			<br />
+			<p style="font-weight: bold;">Financial Information:</p>
+			<p>Current Fees : $27/mo</p>
+			<p>Fees Due on 21th of Month</p>
+			<p>Current Fee Status : <span style="color:yellow">IMPENDING</span></p>
+			<br />
+			<p style="font-weight: bold;">Contact Information:</p>
+			<p>Physical Address : 3434 King's Highway, Reseda, CA 90010</p>
+			<p>Mailing Address : Same</p>
+			<P>Student Phone Number : None</P>
+			<p>Parent Phone Number : (747) 555-1111</p>
+			<p>Student Email : None</p>
+			<p>Parent Email : queenie@email.com</p>
+			<br />
+			<p>Medical Waiver : Up-to-date</p>
+			<p>Special Medical Conditions : None</p>
+
+		</div>
+
+		<div id="editstudent">
+			<button id="editstudentbutton">Edit Student</button>						
+		</div>
+
+		<div id="savechanges">
+			<button id="savechangesbutton">Save Changes</button>
+		</div>
+
+		<div id="archivestudent">
+			<button id="archivestudentbutton">Archive Student</button>			
+		</div>
+
+		<div id="deletestudent">
+			<button id="deletestudentbutton">Delete Student</button>			
+		</div>
+
+	</div>
+
+	<div id="sidebuttons">
+
+		<div id="studentpayment">
+			<button id="studentpaymentbutton">Student Payment</button>
+		</div>
+
+		<div id="addcomment">
+			<button id="addcommentbutton">Add Student Comment</button>
+		</div>
+
+		<div id="backtomanagement">
+			<button id="backtomanage" onclick="location.href = 'instructorstudentmanagement.html'">Back to Student Management</button>
+		</div>
+
+	</div>
+	
+	
+
+	<footer>
+		<img id="logof1" src="../Assets/Images/Logo.png">
+		<div id="footertext">
+			<p>&copy;2021 Viper Kai Dojo &#8226; 1234 Broadway, Reseda, CA 90010</p>
+			<p>(747)55V-IPER</p>
+		</div>
+		<img id="logof2" src="../Assets/Images/Logo.png">
+	</footer>
+
+
+
+
+
+</body>
+
+</html>
